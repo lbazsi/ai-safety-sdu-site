@@ -118,7 +118,7 @@ export default function App() {
           <div className="flex justify-between items-center h-16">
             <div className="flex items-center space-x-3 cursor-pointer" onClick={() => scrollToSection('home')}>
               <img 
-                public="/logo.png" 
+                src="/logo.png" 
                 alt="AI Safety SDU Logo" 
                 className="h-10 w-10 object-contain"
               />
