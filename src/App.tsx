@@ -33,10 +33,37 @@ export default function App() {
     }
   };
 
-  const handleContactSubmit = () => {
+  const handleContactSubmit = async () => {
     if (formData.name && formData.email && formData.message) {
-      alert('Thank you for your message! We\'ll get back to you soon.');
-      setFormData({ name: '', email: '', message: '' });
+      try {
+        // Send email using EmailJS
+        const response = await fetch('https://api.emailjs.com/api/v1.0/email/send', {
+          method: 'POST',
+          headers: {
+            'Content-Type': 'application/json',
+          },
+          body: JSON.stringify({
+            service_id: 'service_jtstqdb',
+            template_id: 'template_ba4zexl',
+            user_id: 'XNNeVYHQQpXho8fms',
+            template_params: {
+              from_name: formData.name,
+              from_email: formData.email,
+              message: formData.message,
+            }
+          })
+        });
+
+        if (response.ok) {
+          alert('Thank you for your message! We\'ll get back to you soon.');
+          setFormData({ name: '', email: '', message: '' });
+        } else {
+          alert('Sorry, there was an error sending your message. Please try again or email us directly.');
+        }
+      } catch (error) {
+        console.error('Error:', error);
+        alert('Sorry, there was an error sending your message. Please try again or email us directly.');
+      }
     }
   };
 
