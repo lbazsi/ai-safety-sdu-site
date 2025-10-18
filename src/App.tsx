@@ -1,5 +1,5 @@
 import { useState, useEffect } from 'react';
-import { Menu, X, Shield, Users, Calendar, Mail, MessageCircle, Instagram } from 'lucide-react';
+import { Menu, X, Users, Calendar, Mail, MessageCircle, Instagram } from 'lucide-react';
 
 export default function App() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
