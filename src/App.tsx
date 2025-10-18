@@ -379,8 +379,8 @@ export default function App() {
                 </div>
 
                 <div className="pt-6">
-                  <p className="font-medium mb-4">Follow Us</p>
-                  <div className="flex space-x-4">
+                  <p className="font-medium mb-4 text-center">Join Our Community</p>
+                  <div className="flex justify-center space-x-4">
                     <a 
                       href="https://chat.whatsapp.com/HzLVb9SP7RR5YpU7oaV6V4" 
                       target="_blank"
