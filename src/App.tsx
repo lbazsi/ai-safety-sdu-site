@@ -129,11 +129,11 @@ export default function App() {
   const teamContacts = [
     {
       name: 'Balázs László',
-      email: 'lbalas25@student.sdu.dk'
+      email: 'lbazsi09@gmail.com'
     },
     {
       name: 'Edna Guerreiro',
-      email: 'edna25@student.sdu.dk'
+      email: 'ednaguerreiro14@gmail.com'
     }
   ];
 
