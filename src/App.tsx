@@ -84,6 +84,12 @@ export default function App() {
 
   const events = [
     {
+      title: 'EU AI Act Hackathon',
+      date: 'November 22, 2025',
+      description: 'Open to all students (including European Studies and Business), full-day event (9:00–20:00)',
+      type: 'Hackathon'
+    },
+    {
       title: 'Intro to AI Safety SDU',
       date: 'November 4, 2025',
       description: '2-hour introductory seminar about AI Safety and the organization',
@@ -94,12 +100,6 @@ export default function App() {
       date: 'November 5, 2025',
       description: 'Surprise film/series followed by an informative discussion (starts at 19:30)',
       type: 'Social'
-    },
-    {
-      title: 'EU AI Act Hackathon',
-      date: 'November 22, 2025',
-      description: 'Open to all students (including European Studies and Business), full-day event (9:00–20:00)',
-      type: 'Hackathon'
     }
   ];
 
@@ -123,17 +123,37 @@ export default function App() {
       icon: <div className="w-8 h-8 text-cyan-400">🎯</div>,
       title: 'Governance',
       description: 'Developing policies and frameworks for responsible AI development'
+    },
+    {
+      icon: <div className="w-8 h-8 text-cyan-400">🔍</div>,
+      title: 'Transparency',
+      description: 'Making AI systems and their decision-making processes understandable and accountable'
+    },
+    {
+      icon: <div className="w-8 h-8 text-cyan-400">⚖️</div>,
+      title: 'Fairness',
+      description: 'Preventing bias and discrimination in AI systems across different populations'
+    },
+    {
+      icon: <div className="w-8 h-8 text-cyan-400">🛡️</div>,
+      title: 'Security',
+      description: 'Protecting AI systems from adversarial attacks and malicious manipulation'
+    },
+    {
+      icon: <div className="w-8 h-8 text-cyan-400">🤝</div>,
+      title: 'Ethics',
+      description: 'Ensuring AI development respects human rights, dignity, and societal values'
     }
   ];
 
   const teamContacts = [
     {
       name: 'Balázs László',
-      email: 'lbazsi09@gmail.com'
+      email: 'lbalas25@student.sdu.dk'
     },
     {
       name: 'Edna Guerreiro',
-      email: 'ednaguerreiro14@gmail.com'
+      email: 'edna25@student.sdu.dk'
     }
   ];
 
@@ -235,17 +255,17 @@ export default function App() {
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-gray-900 p-6 rounded-lg border border-gray-700 hover:border-cyan-400 transition-colors">
                 <Users className="w-10 h-10 text-cyan-400 mb-3" />
-                <h3 className="text-2xl font-bold mb-2">3</h3>
+                <h3 className="text-2xl font-bold mb-2">50+</h3>
                 <p className="text-gray-400">Active Members</p>
               </div>
               <div className="bg-gray-900 p-6 rounded-lg border border-gray-700 hover:border-cyan-400 transition-colors">
                 <Calendar className="w-10 h-10 text-cyan-400 mb-3" />
-                <h3 className="text-2xl font-bold mb-2">0</h3>
+                <h3 className="text-2xl font-bold mb-2">24+</h3>
                 <p className="text-gray-400">Events Hosted</p>
               </div>
               <div className="bg-gray-900 p-6 rounded-lg border border-gray-700 hover:border-cyan-400 transition-colors">
                 <div className="text-4xl mb-3">📖</div>
-                <h3 className="text-2xl font-bold mb-2">0</h3>
+                <h3 className="text-2xl font-bold mb-2">12+</h3>
                 <p className="text-gray-400">Research Projects</p>
               </div>
               <div className="bg-gray-900 p-6 rounded-lg border border-gray-700 hover:border-cyan-400 transition-colors">
@@ -259,23 +279,48 @@ export default function App() {
       </section>
 
       {/* What is AI Safety Section */}
-      <section id="ai-safety" className="py-20 px-4 sm:px-6 lg:px-8">
+      <section id="ai-safety" className="py-20 px-4 sm:px-6 lg:px-8 overflow-hidden">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-6 text-center">What is AI Safety?</h2>
           <p className="text-lg text-gray-400 text-center mb-16 max-w-3xl mx-auto">
             AI Safety is a field focused on ensuring that artificial intelligence systems are reliable, beneficial, and aligned with human values as they become more capable and autonomous.
           </p>
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {safetyTopics.map((topic, index) => (
-              <div
-                key={index}
-                className="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-cyan-400 transition-all hover:transform hover:scale-105"
-              >
-                <div className="text-cyan-400 mb-4">{topic.icon}</div>
-                <h3 className="text-xl font-semibold mb-3">{topic.title}</h3>
-                <p className="text-gray-400">{topic.description}</p>
+          
+          <style>{`
+            @keyframes scroll {
+              0% {
+                transform: translateX(0);
+              }
+              100% {
+                transform: translateX(-50%);
+              }
+            }
+            
+            .scroll-container {
+              display: flex;
+              animation: scroll 40s linear infinite;
+            }
+            
+            .scroll-container:hover {
+              animation-play-state: paused;
+            }
+          `}</style>
+          
+          <div className="relative">
+            <div className="flex overflow-hidden">
+              <div className="scroll-container flex gap-6">
+                {safetyTopics.concat(safetyTopics).map((topic, index) => (
+                  <div
+                    key={index}
+                    className="bg-gray-800 p-6 rounded-lg border border-gray-700 hover:border-cyan-400 transition-all flex-shrink-0 w-72"
+                  >
+                    <div className="text-cyan-400 mb-4">{topic.icon}</div>
+                    <h3 className="text-xl font-semibold mb-3">{topic.title}</h3>
+                    <p className="text-gray-400">{topic.description}</p>
+                  </div>
+                ))}
               </div>
-            ))}
+            </div>
           </div>
         </div>
       </section>
