@@ -110,9 +110,9 @@ export default function App() {
       description: 'Ensuring AI systems behave in accordance with human values and intentions'
     },
     {
-      icon: <Shield className="w-8 h-8" />,
-      title: 'Robustness',
-      description: 'Building AI systems that are reliable, secure, and resistant to failures'
+      icon: <div className="w-8 h-8 text-cyan-400">📢</div>,
+      title: 'Awareness',
+      description: 'Inspiring curiosity and conversation about how we can shape AI systems to serve humanity safely.'
     },
     {
       icon: <div className="w-8 h-8 text-cyan-400">📖</div>,
@@ -283,7 +283,7 @@ export default function App() {
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold mb-6 text-center">What is AI Safety?</h2>
           <p className="text-lg text-gray-400 text-center mb-16 max-w-3xl mx-auto">
-            AI Safety is a field focused on ensuring that artificial intelligence systems are reliable, beneficial, and aligned with human values as they become more capable and autonomous.
+            The goal of AI safety is to understand how these systems operate fundamentally, how they can be misused or misaligned, and how to prevent these scenarios. 
           </p>
           
           <style>{`
