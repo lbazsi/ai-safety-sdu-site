@@ -136,8 +136,8 @@ export default function App() {
     },
     {
       icon: <div className="w-8 h-8 text-cyan-400">🛡️</div>,
-      title: 'Security',
-      description: 'Protecting AI systems from adversarial attacks and malicious manipulation'
+      title: 'Evaluation',
+      description: 'Understanding how AI systems can be harmful to prevent malitious misuse, misalignment'
     },
     {
       icon: <div className="w-8 h-8 text-cyan-400">🤝</div>,
