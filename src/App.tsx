@@ -112,7 +112,7 @@ export default function App() {
     {
       icon: <div className="w-8 h-8 text-cyan-400">📢</div>,
       title: 'Awareness',
-      description: 'Inspiring curiosity and conversation about how we can shape AI systems to serve humanity safely.'
+      description: 'Inspiring curiosity and conversation about how we can shape AI systems to serve humanity safely'
     },
     {
       icon: <div className="w-8 h-8 text-cyan-400">📖</div>,
@@ -149,11 +149,11 @@ export default function App() {
   const teamContacts = [
     {
       name: 'Balázs László',
-      email: 'lbalas25@student.sdu.dk'
+      email: 'lbazsi09@gmail.com'
     },
     {
       name: 'Edna Guerreiro',
-      email: 'edna25@student.sdu.dk'
+      email: 'ednaguerreiro14@gmail.com'
     }
   ];
 
