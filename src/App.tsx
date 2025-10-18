@@ -235,17 +235,17 @@ export default function App() {
             <div className="grid grid-cols-2 gap-6">
               <div className="bg-gray-900 p-6 rounded-lg border border-gray-700 hover:border-cyan-400 transition-colors">
                 <Users className="w-10 h-10 text-cyan-400 mb-3" />
-                <h3 className="text-2xl font-bold mb-2">50+</h3>
+                <h3 className="text-2xl font-bold mb-2">3</h3>
                 <p className="text-gray-400">Active Members</p>
               </div>
               <div className="bg-gray-900 p-6 rounded-lg border border-gray-700 hover:border-cyan-400 transition-colors">
                 <Calendar className="w-10 h-10 text-cyan-400 mb-3" />
-                <h3 className="text-2xl font-bold mb-2">24+</h3>
+                <h3 className="text-2xl font-bold mb-2">0</h3>
                 <p className="text-gray-400">Events Hosted</p>
               </div>
               <div className="bg-gray-900 p-6 rounded-lg border border-gray-700 hover:border-cyan-400 transition-colors">
                 <div className="text-4xl mb-3">📖</div>
-                <h3 className="text-2xl font-bold mb-2">12+</h3>
+                <h3 className="text-2xl font-bold mb-2">0</h3>
                 <p className="text-gray-400">Research Projects</p>
               </div>
               <div className="bg-gray-900 p-6 rounded-lg border border-gray-700 hover:border-cyan-400 transition-colors">
