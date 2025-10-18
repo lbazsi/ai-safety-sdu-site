@@ -244,11 +244,11 @@ export default function App() {
         <div className="max-w-5xl mx-auto">
           <h2 className="text-4xl font-bold mb-12 text-center">About Us</h2>
           <div className="grid md:grid-cols-2 gap-12 items-center">
-            <div>
-              <p className="text-lg text-gray-300 mb-6">
+            <div className="space-y-6 leading-relaxed">
+              <p className="text-lg text-gray-300">
                 AI Safety SDU is a student-led initiative at the University of Southern Denmark dedicated to attracting and empowering talented individuals to contribute to the field of AI Safety. Our mission is to build a strong local and international community that collaborates on technical and governance-focused AI Safety research, and connects with leading organizations working toward the safe and beneficial development of artificial intelligence.
               </p>
-              <p className="text-lg text-gray-300 mb-6">
+              <p className="text-lg text-gray-300">
                 We aim to cultivate this community through a range of educational, social, and research-oriented events — including seminars, hackathons, reading groups, social gatherings like movie nights, and opportunity-oriented events such as fellowships, retreats, and conferences. By combining academic curiosity with real-world collaboration, we seek to create an environment where students and researchers can actively advance the understanding and practice of AI Safety together.
               </p>
             </div>
