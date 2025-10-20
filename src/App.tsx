@@ -84,12 +84,6 @@ export default function App() {
 
   const events = [
     {
-      title: 'EU AI Act Hackathon',
-      date: 'November 22, 2025',
-      description: 'Open to all students (including European Studies and Business), full-day event (9:00–20:00)',
-      type: 'Hackathon'
-    },
-    {
       title: 'Intro to AI Safety SDU',
       date: 'November 4, 2025',
       description: '2-hour introductory seminar about AI Safety and the organization',
@@ -100,6 +94,12 @@ export default function App() {
       date: 'November 5, 2025',
       description: 'Surprise film/series followed by an informative discussion (starts at 19:30)',
       type: 'Social'
+    },
+    {
+      title: 'EU AI Act Hackathon',
+      date: 'November 22, 2025',
+      description: 'Open to all students (including European Studies and Business), full-day event (9:00–20:00)',
+      type: 'Hackathon'
     }
   ];
 
