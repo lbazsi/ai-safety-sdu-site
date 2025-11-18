@@ -85,15 +85,9 @@ export default function App() {
   const events = [
     {
       title: 'Intro to AI Safety SDU',
-      date: 'November 4, 2025',
-      description: '2-hour introductory seminar about AI Safety and the organization',
+      date: 'November 18, 2025',
+      description: 'Introductory seminar about AI Safety and the organization from 17:00',
       type: 'Seminar'
-    },
-    {
-      title: 'Movie Night',
-      date: 'November 5, 2025',
-      description: 'Surprise film/series followed by an informative discussion (starts at 19:30)',
-      type: 'Social'
     },
     {
       title: 'EU AI Act Hackathon',
