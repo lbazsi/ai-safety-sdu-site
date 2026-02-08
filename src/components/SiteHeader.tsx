@@ -1,7 +1,6 @@
 import { useState } from "react";
 import { Link, NavLink } from "react-router-dom";
 import { Menu, X } from "lucide-react";
-import { MOTTO } from "../content/siteData";
 
 const navItems = [
   { to: "/about", label: "About" },
@@ -53,12 +52,6 @@ export default function SiteHeader() {
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
-        </div>
-      </div>
-
-      <div className="border-t border-zinc-200">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-2 text-center text-sm text-zinc-700">
-          {MOTTO}
         </div>
       </div>
 
