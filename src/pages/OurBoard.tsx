@@ -39,7 +39,7 @@ export default function OurBoardPage() {
               <img
                 src={m.imageSrc}
                 alt={`${m.name} profile`}
-                className="w-32 h-32 rounded-2xl object-cover mx-auto border border-zinc-200"
+                className="w-full aspect-square rounded-2xl object-cover border border-zinc-200"
               />
 
               <h2 className="mt-5 text-2xl font-semibold text-zinc-950">{m.name}</h2>

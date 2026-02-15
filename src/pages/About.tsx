@@ -158,7 +158,29 @@ export default function AboutPage() {
             </p>
           </div>
         </div>
-      </div>
+      
+        {/* Activity photos placeholders */}
+        <div className="mt-14 pt-10 border-t border-zinc-200">
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 justify-items-center">
+            {Array.from({ length: 8 }, (_, i) => {
+              const n = i + 1;
+              return (
+                <div key={n} className="w-full max-w-[220px]">
+                  <img
+                    src={`/act${n}.png`}
+                    alt={`Activity placeholder ${n}`}
+                    className="w-full aspect-square object-cover rounded-2xl border border-zinc-200"
+                  />
+                  <p className="mt-2 text-xs sm:text-sm text-zinc-600 text-center">
+                    Activity photo placeholder {n}
+                  </p>
+                </div>
+              );
+            })}
+          </div>
+        </div>
+
+</div>
     </section>
   );
 }
