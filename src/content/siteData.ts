@@ -31,8 +31,8 @@ export type SiteEvent = {
   cadence: EventCadence;
 };
 
-export const events = [
-  {
+export const events: ReadonlyArray<SiteEvent> = [
+{
     title: "Intro to SIRAIS",
     date: "November 18, 2025",
     description: "Introductory seminar about AI Safety and the organization from 17:00",
@@ -47,8 +47,7 @@ export const events = [
     type: "Hackathon",
     cadence: "occasional",
   },
-] satisfies ReadonlyArray<SiteEvent>;
-
+];
 export const aiSafetyIntro =
   "The goal of AI safety is to understand how these systems operate fundamentally, how they can be misused or misaligned, and how to prevent these scenarios.";
 
