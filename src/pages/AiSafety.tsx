@@ -100,8 +100,7 @@ export default function AiSafetyPage() {
                   standards, model reporting, compute monitoring, secure model release practices, and compliance tooling.
                 </li>
                 <li>
-                  <span className="font-semibold text-zinc-950">Sentience & moral patienthood (frontier topic):</span>
-                  investigating whether future systems could have experiences or morally relevant properties, and what
+                  <span className="font-semibold text-zinc-950">Sentience & moral patienthood (frontier topic):</span> investigating whether future systems could have experiences or morally relevant properties, and what
                   precautionary principles would look like if there’s uncertainty.
                 </li>
               </ul>
