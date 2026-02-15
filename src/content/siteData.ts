@@ -47,10 +47,10 @@ export const events: ReadonlyArray<SiteEvent> = [
     cadence: "occasional",
   },
   {
-    title: "Reading group (school)",
-    date: "February 24, 2026 · 17:00",
+    title: "Reading group",
+    date: "February 24 (Tuesdays), 2026 · 17:00",
     description:
-      "We read a key paper or article together and pressure-test the ideas in discussion—no prior expertise required.",
+      "We read a key paper or article together and pressure-test the ideas in discussion",
     type: "Reading group",
     location: "School",
     cadence: "recurring",
@@ -59,16 +59,16 @@ export const events: ReadonlyArray<SiteEvent> = [
     title: "Workshop",
     date: "February 28, 2026 · 10:30–17:30",
     description:
-      "Hands-on, skill-focused session to help you go from interest to an actionable plan (projects, research, or applications).",
+      "A small presentation, intro to a topic followed by a small, collaborative project",
     type: "Workshop",
     location: "U102",
     cadence: "occasional",
   },
   {
     title: "Movie night",
-    date: "March 2, 2026 · 19:30–23:00",
+    date: "March 2 (Mondays), 2026 · 19:30–23:00",
     description:
-      "Low-stakes social night with an AI-themed episode/movie and a short discussion afterwards.",
+      "We are going to start watching Pantheon, and have small discussions afterwards",
     type: "Social",
     location: "U102",
     cadence: "recurring",
