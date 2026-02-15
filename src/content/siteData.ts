@@ -76,18 +76,6 @@ export const events: ReadonlyArray<SiteEvent> = [
 
   // Projects
   {
-    title: "Apart Research Sprint Hub",
-    date: "Monthly sprint cycle · rolling",
-    description:
-      "Pick a concrete goal, meet for structure + accountability, and finish the month with something real: notes, a write-up, a prototype, or a research plan.",
-    type: "Project",
-    location: "U102",
-    cadence: "recurring",
-    category: "project",
-    ongoing: true,
-    applyHref: "mailto:aisafetysdu@gmail.com?subject=Apply%20to%20SIRAIS%20Projects",
-  },
-  {
     title: "Small research group",
     date: "Ongoing · rolling intake",
     description:
@@ -96,7 +84,6 @@ export const events: ReadonlyArray<SiteEvent> = [
     location: "U102",
     cadence: "recurring",
     category: "project",
-    ongoing: true,
     applyHref: "mailto:aisafetysdu@gmail.com?subject=Apply%20to%20SIRAIS%20Projects",
   },
 ];
