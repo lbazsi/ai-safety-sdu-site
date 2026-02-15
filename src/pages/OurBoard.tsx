@@ -11,7 +11,7 @@ const boardMembers = [
   {
     name: "Edna",
     imageSrc: "/edna.png",
-    bio: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
+    bio: "Hey there! My main focus is AI development and research, with a strong interest in building and understanding intelligent systems from the ground up. I am currently a software engineering student and have been diving deeper into AI for quite some time now - exploring everything from core concepts to hands-on projects. I serve as one of the founders and the Vice-President of this organization, where I am passionate about fostering a collaborative space for curious, driven students who want to push the boundaries of what is possible with AI. I am excited to share what I have learned, grow alongside you all and help guide motivated minds toward meaningful and innovative paths in this field. I look forward to seeing and connecting to you all <3",
     email: "edna@example.com",
     whatsapp: "https://wa.me/351930612363",
   },
