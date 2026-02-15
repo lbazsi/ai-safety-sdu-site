@@ -2,11 +2,11 @@ import { Mail, MessageCircle } from "lucide-react";
 
 const boardMembers = [
   {
-    name: "Balázs",
+    name: "Balázs László",
     imageSrc: "/balazs.png",
-    bio: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
-    email: "balazs@example.com",
-    whatsapp: "https://wa.me/4500000000",
+    bio: "Hey! My primary focus is technical AI Safety research with experience mostly in mech interp and evaluations, monitoring frameworks. I recently completed the Algoverse AI Research Program, going to start the Sentien Futures Fellowship and I am the Founder and President of this university group. I would love to share my knowledge, experience and guide ambitios, talented students towards impactful careers. Looking forward to seeing you!",
+    email: "lbazsi09@gmail.com",
+    whatsapp: "https://wa.me/36703656656",
   },
   {
     name: "Edna",
