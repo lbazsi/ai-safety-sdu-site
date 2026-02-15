@@ -26,8 +26,9 @@ export type EventCadence = "recurring" | "occasional";
 export type SiteEvent = {
   title: string;
   date: string;
-  description: string;
+  description?: string;
   type: string;
+  location: string;
   cadence: EventCadence;
 };
 
@@ -35,32 +36,33 @@ export const events: ReadonlyArray<SiteEvent> = [
   {
     title: "Introductory event",
     date: "February 19, 2026 · 17:00–19:00",
-    description: "Room U102",
     type: "Seminar",
+    location: "U102",
     cadence: "occasional",
   },
   {
     title: "Reading group (school)",
     date: "February 24, 2026 · 17:00",
-    description: "At school",
     type: "Reading group",
+    location: "School",
     cadence: "recurring",
   },
   {
     title: "Workshop",
     date: "February 28, 2026 · 10:30–17:30",
-    description: "Room U102",
     type: "Workshop",
+    location: "U102",
     cadence: "occasional",
   },
   {
     title: "Movie night",
     date: "March 2, 2026 · 19:30–23:00",
-    description: "Room U102",
     type: "Social",
+    location: "U102",
     cadence: "recurring",
   },
 ];
+
 
 export const aiSafetyIntro =
   "The goal of AI safety is to understand how these systems operate fundamentally, how they can be misused or misaligned, and how to prevent these scenarios.";
