@@ -3,7 +3,7 @@ export const MOTTO = "Building a safer AI future - together.";
 export const SOCIAL_LINKS = {
   whatsapp: "https://chat.whatsapp.com/HzLVb9SP7RR5YpU7oaV6V4",
   facebook: "https://www.facebook.com/profile.php?id=61582480313874",
-  instagram: "https://www.instagram.com/aisafetysdu/",
+  instagram: "https://www.instagram.com/sirais_sdu/",
 } as const;
 
 export const ABOUT_LEAD =
@@ -15,8 +15,8 @@ export const aboutParagraphs = [
 ];
 
 export const achievementsCards = [
-  { icon: "users", value: "3", label: "Active Members" },
-  { icon: "calendar", value: "0", label: "Events Hosted" },
+  { icon: "users", value: "10", label: "Active Members" },
+  { icon: "calendar", value: "2", label: "Events Hosted" },
   { icon: "book", value: "0", label: "Research Projects" },
   { icon: "brain", value: "4", label: "Students impacted" },
 ] as const;
@@ -84,7 +84,7 @@ export const events: ReadonlyArray<SiteEvent> = [
     location: "U102",
     cadence: "recurring",
     category: "project",
-    applyHref: "mailto:aisafetysdu@gmail.com?subject=Apply%20to%20SIRAIS%20Projects",
+    applyHref: "mailto:siraisdk@gmail.com?subject=Apply%20to%20SIRAIS%20Projects",
   },
 ];
 
@@ -135,7 +135,7 @@ export const safetyTopics = [
   },
 ] as const;
 
-export const contactEmail = "aisafetysdu@gmail.com";
+export const contactEmail = "siraisdk@gmail.com";
 export const contactLocation = "Denmark, Sønderborg";
 
 export const teamContacts = [
