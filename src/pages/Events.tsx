@@ -22,10 +22,10 @@ export default function EventsPage() {
         <div className="space-y-14">
           <div>
             <h2 className="text-2xl font-semibold tracking-tight mb-6 text-center">
-              Recurring events
+              Occasional events
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {recurringEvents.map((event) => (
+              {occasionalEvents.map((event) => (
                 <div
                   key={`${event.title}-${event.date}`}
                   className="bg-white p-6 rounded-lg border border-zinc-200 hover:border-zinc-400 transition-colors"
@@ -46,10 +46,10 @@ export default function EventsPage() {
 
           <div>
             <h2 className="text-2xl font-semibold tracking-tight mb-6 text-center">
-              Occasional events
+              Recurring events
             </h2>
             <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-              {occasionalEvents.map((event) => (
+              {recurringEvents.map((event) => (
                 <div
                   key={`${event.title}-${event.date}`}
                   className="bg-white p-6 rounded-lg border border-zinc-200 hover:border-zinc-400 transition-colors"

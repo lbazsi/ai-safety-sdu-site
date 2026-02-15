@@ -18,7 +18,7 @@ export const achievementsCards = [
   { icon: "users", value: "3", label: "Active Members" },
   { icon: "calendar", value: "0", label: "Events Hosted" },
   { icon: "book", value: "0", label: "Research Projects" },
-  { icon: "brain", value: "∞", label: "Ideas Shared" },
+  { icon: "brain", value: "4", label: "Students impacted" },
 ] as const;
 
 export type EventCadence = "recurring" | "occasional";
@@ -32,22 +32,36 @@ export type SiteEvent = {
 };
 
 export const events: ReadonlyArray<SiteEvent> = [
-{
-    title: "Intro to SIRAIS",
-    date: "November 18, 2025",
-    description: "Introductory seminar about AI Safety and the organization from 17:00",
+  {
+    title: "Introductory event",
+    date: "February 19, 2026 · 17:00–19:00",
+    description: "Room U102",
     type: "Seminar",
     cadence: "occasional",
   },
   {
-    title: "EU AI Act Hackathon",
-    date: "November 22, 2025",
-    description:
-      "Open to all students (including European Studies and Business), full-day event (9:00–20:00)",
-    type: "Hackathon",
+    title: "Reading group (school)",
+    date: "February 24, 2026 · 17:00",
+    description: "At school",
+    type: "Reading group",
+    cadence: "recurring",
+  },
+  {
+    title: "Workshop",
+    date: "February 28, 2026 · 10:30–17:30",
+    description: "Room U102",
+    type: "Workshop",
     cadence: "occasional",
   },
+  {
+    title: "Movie night",
+    date: "March 2, 2026 · 19:30–23:00",
+    description: "Room U102",
+    type: "Social",
+    cadence: "recurring",
+  },
 ];
+
 export const aiSafetyIntro =
   "The goal of AI safety is to understand how these systems operate fundamentally, how they can be misused or misaligned, and how to prevent these scenarios.";
 
