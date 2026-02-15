@@ -164,7 +164,7 @@ export default function AboutPage() {
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
             {[
   { src: "/act1.png", caption: "Our first AI Safety intro event" },
-  { src: "/act2.png", caption: "Consectetur adipiscing elit." },
+  { src: "/act2.jpg", caption: "Consectetur adipiscing elit." },
   { src: "/act3.png", caption: "Sed do eiusmod tempor." },
   { src: "/act4.png", caption: "Incididunt ut labore et." },
   { src: "/act5.png", caption: "Dolore magna aliqua." },
