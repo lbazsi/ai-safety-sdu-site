@@ -163,8 +163,8 @@ export default function AboutPage() {
         <div className="mt-14 pt-10 border-t border-zinc-200">
           <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
             {[
-  { src: "/act1.png", caption: "Our first AI Safety intro event" },
-  { src: "/act2.jpg", caption: "Consectetur adipiscing elit." },
+  { src: "/act1.jpeg", caption: "Our first AI Safety intro event" },
+  { src: "/act2.jpg", caption: "EAGxAmsterdam conference" },
   { src: "/act3.png", caption: "Sed do eiusmod tempor." },
   { src: "/act4.png", caption: "Incididunt ut labore et." },
   { src: "/act5.png", caption: "Dolore magna aliqua." },
