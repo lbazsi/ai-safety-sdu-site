@@ -101,21 +101,7 @@ export default function AboutPage() {
           </div>
         </div>
 
-
-        {/* Why you should join */}
-        <div className="mt-14 text-center">
-          <h2 className="text-4xl font-bold tracking-tight mb-6">Why you should join</h2>
-          <div className="space-y-6 leading-relaxed max-w-none mx-auto">
-            <p className="text-base sm:text-lg text-zinc-800">
-              You should join because SIRAIS is built to turn interest into real momentum: you’ll go from “I care about AI safety” to having the knowledge, structure, and people around you to actually contribute. You’ll learn faster through our seminars and reading groups, and you’ll stay consistent because you’ll be surrounded by others who are also working, applying, and improving week by week. You’ll get access to mentoring and peers who will help you choose a direction—technical research, governance, or a mix—and then keep you accountable to concrete goals. You’ll meet ambitious, kind people at SDU who take the field seriously, while also plugging into the wider AI safety ecosystem through conferences, speakers, and collaborations. You’ll have chances to work on projects that matter, build a portfolio of outputs, and get guided support when applying to fellowships, programs, and research opportunities.
-            </p>
-            <p className="text-base sm:text-lg text-zinc-800">
-              And we don’t just help you “get started”—we help you move toward high-impact roles over time: we’ll push you toward ambitious, realistic career paths, help you build the skills and proof-of-work that actually matter, and support you through the full journey with feedback, accountability, and practical help whenever you need it. Most importantly, you’ll be part of a community that doesn’t just discuss the risks of advanced AI—it actively develops the skills, relationships, and research needed to make AI safer in practice.
-            </p>
-          </div>
-        </div>
-
-        {/* Boxes */}
+        {/* Boxes + mission + activity types */}
         <div className="mt-14 pt-10 border-t border-zinc-200">
           <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 sm:gap-6">
             {achievementsCards.map((card) => {
@@ -157,6 +143,19 @@ export default function AboutPage() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+
+        {/* Why should YOU join */}
+        <div className="mt-14 text-center">
+          <h2 className="text-4xl font-bold tracking-tight mb-6">Why should YOU join</h2>
+          <div className="space-y-6 leading-relaxed max-w-none mx-auto">
+            <p className="text-base sm:text-lg text-zinc-800">
+              You should join because SIRAIS is built to turn interest into real momentum: you’ll go from “I care about AI safety” to having the knowledge, structure, and people around you to actually contribute. You’ll learn faster through our seminars and reading groups, and you’ll stay consistent because you’ll be surrounded by others who are also working, applying, and improving week by week. You’ll get access to mentoring and peers who will help you choose a direction—technical research, governance, or a mix—and then keep you accountable to concrete goals. You’ll meet ambitious, kind people at SDU who take the field seriously, while also plugging into the wider AI safety ecosystem through conferences, speakers, and collaborations. You’ll have chances to work on projects that matter, build a portfolio of outputs, and get guided support when applying to fellowships, programs, and research opportunities.
+            </p>
+            <p className="text-base sm:text-lg text-zinc-800">
+              And we don’t just help you “get started”—we help you move toward high-impact roles over time: we’ll push you toward ambitious, realistic career paths, help you build the skills and proof-of-work that actually matter, and support you through the full journey with feedback, accountability, and practical help whenever you need it. Most importantly, you’ll be part of a community that doesn’t just discuss the risks of advanced AI—it actively develops the skills, relationships, and research needed to make AI safer in practice.
+            </p>
           </div>
         </div>
       </div>

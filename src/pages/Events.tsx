@@ -12,6 +12,19 @@ function EventCard({ event }: { event: SiteEvent }) {
           <span className="text-xs font-semibold px-3 py-1 bg-zinc-800 text-stone-50 rounded-full">
             {event.location}
           </span>
+          {event.ongoing ? (
+            <span className="text-xs font-semibold px-3 py-1 bg-zinc-700 text-stone-50 rounded-full">
+              ONGOING
+            </span>
+          ) : null}
+          {event.applyHref ? (
+            <a
+              href={event.applyHref}
+              className="text-xs font-semibold px-3 py-1 border border-zinc-300 text-zinc-900 rounded-full hover:border-zinc-600 transition-colors"
+            >
+              APPLY
+            </a>
+          ) : null}
         </div>
         <Calendar className="w-5 h-5 text-zinc-600 flex-shrink-0" />
       </div>
@@ -24,16 +37,22 @@ function EventCard({ event }: { event: SiteEvent }) {
 }
 
 export default function EventsPage() {
-  const { recurringEvents, occasionalEvents } = events.reduce<{
+  const { projects, recurringEvents, occasionalEvents } = events.reduce<{
+    projects: SiteEvent[];
     recurringEvents: SiteEvent[];
     occasionalEvents: SiteEvent[];
   }>(
     (acc, e) => {
-      if (e.cadence === "recurring") acc.recurringEvents.push(e);
-      else if (e.cadence === "occasional") acc.occasionalEvents.push(e);
+      if (e.category === "project") {
+        acc.projects.push(e);
+      } else if (e.cadence === "recurring") {
+        acc.recurringEvents.push(e);
+      } else if (e.cadence === "occasional") {
+        acc.occasionalEvents.push(e);
+      }
       return acc;
     },
-    { recurringEvents: [], occasionalEvents: [] }
+    { projects: [], recurringEvents: [], occasionalEvents: [] }
   );
 
   return (
@@ -59,6 +78,15 @@ export default function EventsPage() {
             </h2>
             <div className="flex flex-wrap justify-center gap-6">
               {recurringEvents.map((event) => (
+                <EventCard key={`${event.title}-${event.date}`} event={event} />
+              ))}
+            </div>
+          </div>
+
+          <div>
+            <h2 className="text-2xl font-semibold tracking-tight mb-6 text-center">Projects</h2>
+            <div className="flex flex-wrap justify-center gap-6">
+              {projects.map((event) => (
                 <EventCard key={`${event.title}-${event.date}`} event={event} />
               ))}
             </div>

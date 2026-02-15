@@ -22,6 +22,7 @@ export const achievementsCards = [
 ] as const;
 
 export type EventCadence = "recurring" | "occasional";
+export type EventCategory = "event" | "project";
 
 export type SiteEvent = {
   title: string;
@@ -30,12 +31,17 @@ export type SiteEvent = {
   type: string;
   location: string;
   cadence: EventCadence;
+  category?: EventCategory; // defaults to "event"
+  ongoing?: boolean; // used mainly for projects
+  applyHref?: string; // used mainly for projects
 };
 
 export const events: ReadonlyArray<SiteEvent> = [
   {
     title: "Introductory event",
     date: "February 19, 2026 · 17:00–19:00",
+    description:
+      "A friendly intro to AI safety + what SIRAIS is doing this semester, with clear next steps for getting involved.",
     type: "Seminar",
     location: "U102",
     cadence: "occasional",
@@ -43,6 +49,8 @@ export const events: ReadonlyArray<SiteEvent> = [
   {
     title: "Reading group (school)",
     date: "February 24, 2026 · 17:00",
+    description:
+      "We read a key paper or article together and pressure-test the ideas in discussion—no prior expertise required.",
     type: "Reading group",
     location: "School",
     cadence: "recurring",
@@ -50,6 +58,8 @@ export const events: ReadonlyArray<SiteEvent> = [
   {
     title: "Workshop",
     date: "February 28, 2026 · 10:30–17:30",
+    description:
+      "Hands-on, skill-focused session to help you go from interest to an actionable plan (projects, research, or applications).",
     type: "Workshop",
     location: "U102",
     cadence: "occasional",
@@ -57,12 +67,39 @@ export const events: ReadonlyArray<SiteEvent> = [
   {
     title: "Movie night",
     date: "March 2, 2026 · 19:30–23:00",
+    description:
+      "Low-stakes social night with an AI-themed episode/movie and a short discussion afterwards.",
     type: "Social",
     location: "U102",
     cadence: "recurring",
   },
-];
 
+  // Projects
+  {
+    title: "Apart Research Sprint Hub",
+    date: "Monthly sprint cycle · rolling",
+    description:
+      "Pick a concrete goal, meet for structure + accountability, and finish the month with something real: notes, a write-up, a prototype, or a research plan.",
+    type: "Project",
+    location: "U102",
+    cadence: "recurring",
+    category: "project",
+    ongoing: true,
+    applyHref: "mailto:aisafetysdu@gmail.com?subject=Apply%20to%20SIRAIS%20Projects",
+  },
+  {
+    title: "Small research group",
+    date: "Ongoing · rolling intake",
+    description:
+      "A tighter group focused on turning ideas into serious outputs: scoping, reviewing related work, running experiments, and writing.",
+    type: "Project",
+    location: "U102",
+    cadence: "recurring",
+    category: "project",
+    ongoing: true,
+    applyHref: "mailto:aisafetysdu@gmail.com?subject=Apply%20to%20SIRAIS%20Projects",
+  },
+];
 
 export const aiSafetyIntro =
   "The goal of AI safety is to understand how these systems operate fundamentally, how they can be misused or misaligned, and how to prevent these scenarios.";
@@ -102,8 +139,7 @@ export const safetyTopics = [
   {
     emoji: "🛡️",
     title: "Evaluation",
-    description:
-      "Understanding how AI systems can be harmful to prevent malitious misuse, misalignment",
+    description: "Understanding how AI systems can be harmful to prevent malitious misuse, misalignment",
   },
   {
     emoji: "🤝",
