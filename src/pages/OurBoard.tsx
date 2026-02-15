@@ -13,14 +13,14 @@ const boardMembers = [
     imageSrc: "/edna.png",
     bio: "Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.",
     email: "edna@example.com",
-    whatsapp: "https://wa.me/4500000000",
+    whatsapp: "https://wa.me/351930612363",
   },
   {
     name: "Etele",
     imageSrc: "/etele.png",
     bio: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
     email: "etele@example.com",
-    whatsapp: "https://wa.me/4500000000",
+    whatsapp: "https://wa.me/36205100407",
   },
 ] as const;
 
