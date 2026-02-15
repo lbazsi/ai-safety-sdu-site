@@ -5,6 +5,7 @@ import AiSafetyPage from "./pages/AiSafety";
 import AchievementsPage from "./pages/Achievements";
 import EventsPage from "./pages/Events";
 import ContactPage from "./pages/Contact";
+import OurBoardPage from "./pages/OurBoard";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
           <Route path="/ai-safety" element={<AiSafetyPage />} />
           <Route path="/events" element={<EventsPage />} />
           <Route path="/achievements" element={<AchievementsPage />} />
+          <Route path="/our-board" element={<OurBoardPage />} />
           <Route path="/contact" element={<ContactPage />} />
           <Route path="*" element={<Navigate to="/about" replace />} />
         </Route>

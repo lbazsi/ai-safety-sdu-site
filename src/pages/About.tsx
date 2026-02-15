@@ -26,7 +26,7 @@ export default function AboutPage() {
         <div className="text-center">
           <h2 className="text-4xl font-bold tracking-tight mb-6">About</h2>
 
-          <div className="space-y-6 leading-relaxed max-w-prose mx-auto">
+          <div className="space-y-6 leading-relaxed max-w-4xl mx-auto">
             {aboutParagraphs.map((p) => (
               <p key={p} className="text-base sm:text-lg text-zinc-800">
                 {p}

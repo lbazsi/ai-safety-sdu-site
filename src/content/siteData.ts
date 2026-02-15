@@ -21,12 +21,23 @@ export const achievementsCards = [
   { icon: "brain", value: "∞", label: "Ideas Shared" },
 ] as const;
 
+export type EventCadence = "recurring" | "occasional";
+
+export type SiteEvent = {
+  title: string;
+  date: string;
+  description: string;
+  type: string;
+  cadence: EventCadence;
+};
+
 export const events = [
   {
     title: "Intro to SIRAIS",
     date: "November 18, 2025",
     description: "Introductory seminar about AI Safety and the organization from 17:00",
     type: "Seminar",
+    cadence: "occasional",
   },
   {
     title: "EU AI Act Hackathon",
@@ -34,8 +45,9 @@ export const events = [
     description:
       "Open to all students (including European Studies and Business), full-day event (9:00–20:00)",
     type: "Hackathon",
+    cadence: "occasional",
   },
-] as const;
+] satisfies ReadonlyArray<SiteEvent>;
 
 export const aiSafetyIntro =
   "The goal of AI safety is to understand how these systems operate fundamentally, how they can be misused or misaligned, and how to prevent these scenarios.";
