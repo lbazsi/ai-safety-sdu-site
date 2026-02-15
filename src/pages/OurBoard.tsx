@@ -4,7 +4,7 @@ const boardMembers = [
   {
     name: "Balázs László",
     imageSrc: "/balazs.png",
-    bio: "Hey! My primary focus is technical AI Safety research with experience mostly in mech interp and evaluations, monitoring frameworks. I recently completed the Algoverse AI Research Program, going to start the Sentien Futures Fellowship and I am the Founder and President of this university group. I would love to share my knowledge, experience and guide ambitios, talented students towards impactful careers. Looking forward to seeing you!",
+    bio: "Hey! My primary focus is technical AI Safety research with research experience in mech interp and evaluations, monitoring frameworks. I started my journey through AI Safety as a member of AIS Hungary, and now finished multiple courses, fellowships, including the BlueDot AGI Stratefy course. I am well versed in the world of governance, robotics, CS, as well as competitive sports. Additionally, I recently completed the Algoverse AI Research Program, going to start the Sentien Futures Project Incubator and I am the Founder and President of this university group. I would love to share my knowledge, experience and guide ambitios, talented students towards impactful careers. Looking forward to seeing you!",
     email: "lbazsi09@gmail.com",
     whatsapp: "https://wa.me/36703656656",
   },
