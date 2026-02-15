@@ -2,8 +2,14 @@ import { Calendar } from "lucide-react";
 import { events } from "../content/siteData";
 
 export default function EventsPage() {
-  const recurringEvents = events.filter((e) => e.cadence === "recurring");
-  const occasionalEvents = events.filter((e) => e.cadence === "occasional");
+  const { recurringEvents, occasionalEvents } = events.reduce(
+  (acc, e) => {
+    if (e.cadence === "recurring") acc.recurringEvents.push(e);
+    else acc.occasionalEvents.push(e);
+    return acc;
+  },
+  { recurringEvents: [] as typeof events, occasionalEvents: [] as typeof events }
+);
 
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8">
