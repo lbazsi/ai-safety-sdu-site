@@ -52,7 +52,7 @@ export const events: ReadonlyArray<SiteEvent> = [
     description:
       "We read a key paper or article together and pressure-test the ideas in discussion",
     type: "Reading group",
-    location: "School",
+    location: "School library",
     cadence: "recurring",
   },
   {
