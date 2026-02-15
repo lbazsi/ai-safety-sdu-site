@@ -161,7 +161,7 @@ export default function AboutPage() {
       
         {/* Activity photos placeholders */}
         <div className="mt-14 pt-10 border-t border-zinc-200">
-          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 justify-items-center">
+          <div className="flex flex-wrap justify-center gap-4 sm:gap-6">
             {[
   { src: "/act1.png", caption: "Lorem ipsum dolor sit amet." },
   { src: "/act2.png", caption: "Consectetur adipiscing elit." },
@@ -171,7 +171,7 @@ export default function AboutPage() {
   { src: "/act6.png", caption: "Ut enim ad minim veniam." },
   { src: "/act7.png", caption: "Duis aute irure dolor." },
 ].map((p, i) => (
-  <div key={p.src} className="w-full max-w-[220px]">
+  <div key={p.src} className="w-[160px] sm:w-[180px] md:w-[200px] lg:w-[220px] shrink-0">
     <img
       src={p.src}
       alt={`Activity photo ${i + 1}`}
