@@ -162,21 +162,27 @@ export default function AboutPage() {
         {/* Activity photos placeholders */}
         <div className="mt-14 pt-10 border-t border-zinc-200">
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-4 sm:gap-6 justify-items-center">
-            {Array.from({ length: 8 }, (_, i) => {
-              const n = i + 1;
-              return (
-                <div key={n} className="w-full max-w-[220px]">
-                  <img
-                    src={`/act${n}.png`}
-                    alt={`Activity placeholder ${n}`}
-                    className="w-full aspect-square object-cover rounded-2xl border border-zinc-200"
-                  />
-                  <p className="mt-2 text-xs sm:text-sm text-zinc-600 text-center">
-                    Activity photo placeholder {n}
-                  </p>
-                </div>
-              );
-            })}
+            {[
+  { src: "/act1.png", caption: "Lorem ipsum dolor sit amet." },
+  { src: "/act2.png", caption: "Consectetur adipiscing elit." },
+  { src: "/act3.png", caption: "Sed do eiusmod tempor." },
+  { src: "/act4.png", caption: "Incididunt ut labore et." },
+  { src: "/act5.png", caption: "Dolore magna aliqua." },
+  { src: "/act6.png", caption: "Ut enim ad minim veniam." },
+  { src: "/act7.png", caption: "Duis aute irure dolor." },
+].map((p, i) => (
+  <div key={p.src} className="w-full max-w-[220px]">
+    <img
+      src={p.src}
+      alt={`Activity photo ${i + 1}`}
+      className="w-full aspect-square object-cover rounded-2xl border border-zinc-200"
+    />
+    <p className="mt-2 text-xs sm:text-sm text-zinc-600 text-center">
+      {p.caption}
+    </p>
+  </div>
+))}
+
           </div>
         </div>
 
