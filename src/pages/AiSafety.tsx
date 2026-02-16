@@ -1,6 +1,51 @@
 import { aiSafetyIntro, safetyTopics } from "../content/siteData";
 
 export default function AiSafetyPage() {
+  const resources = [
+    {
+      title: "AI Safety Atlas",
+      url: "https://ai-safety-atlas.com/",
+      description:
+        "A curated map of AI safety concepts, subfields, and learning paths—use it to orient yourself and pick a direction.",
+    },
+    {
+      title: "The AI Safety Book",
+      url: "https://www.aisafetybook.com/",
+      description:
+        "An accessible, well-structured book that explains core ideas, risks, and research directions with clear examples.",
+    },
+    {
+      title: "ARENA Curriculum",
+      url: "https://www.arena.education/curriculum",
+      description:
+        "Hands-on technical training: alignment, interpretability, and evaluation exercises that build real research skills.",
+    },
+    {
+      title: "BlueDot — AI Governance",
+      url: "https://bluedot.org/courses/governance/1/1",
+      description:
+        "A guided course on AI governance: institutions, policy levers, standards, and how to reason about real-world impact.",
+    },
+    {
+      title: "BlueDot — AGI Strategy",
+      url: "https://bluedot.org/courses/agi-strategy/1/1",
+      description:
+        "A strategic overview of advanced AI development: incentives, timelines, key actors, and decision points that shape outcomes.",
+    },
+    {
+      title: "SAFE.AI (Center for AI Safety)",
+      url: "https://safe.ai/",
+      description:
+        "A policy-facing hub on catastrophic risks from advanced AI, including proposals, statements, and background materials.",
+    },
+    {
+      title: "AISafety.com",
+      url: "https://www.aisafety.com/",
+      description:
+        "A broad directory of AI safety resources—links, orgs, writings, and communities across many subfields.",
+    },
+  ] as const;
+
   return (
     <section className="py-16 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-6xl mx-auto">
@@ -100,7 +145,8 @@ export default function AiSafetyPage() {
                   standards, model reporting, compute monitoring, secure model release practices, and compliance tooling.
                 </li>
                 <li>
-                  <span className="font-semibold text-zinc-950">Sentience & moral patienthood (frontier topic):</span> investigating whether future systems could have experiences or morally relevant properties, and what
+                  <span className="font-semibold text-zinc-950">Sentience & moral patienthood (frontier topic):</span>
+                  investigating whether future systems could have experiences or morally relevant properties, and what
                   precautionary principles would look like if there’s uncertainty.
                 </li>
               </ul>
@@ -119,6 +165,36 @@ export default function AiSafetyPage() {
               rest. For example: learn how to evaluate jailbreaks, then explore why they work; learn a basic interpretability
               tool, then test an intervention; or map a governance proposal and tie it to concrete audit methods.
             </p>
+          </div>
+        </div>
+
+        <div className="mt-16 max-w-6xl mx-auto">
+          <h2 className="text-2xl sm:text-3xl font-semibold tracking-tight text-zinc-950 text-center">
+            Useful links and resources
+          </h2>
+          <p className="mt-4 text-zinc-700 text-center max-w-3xl mx-auto">
+            A short, high-signal set of starting points—ordered to help you go from broad orientation to concrete skill-building.
+          </p>
+
+          <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {resources.map((r) => (
+              <a
+                key={r.url}
+                href={r.url}
+                target="_blank"
+                rel="noreferrer"
+                className="bg-white p-6 rounded-lg border border-zinc-200 hover:border-zinc-400 transition-colors block"
+              >
+                <div className="flex items-start justify-between gap-4 mb-3">
+                  <h3 className="text-lg font-semibold text-zinc-950 leading-snug">{r.title}</h3>
+                  <span className="text-xs font-semibold px-3 py-1 bg-zinc-950 text-stone-50 rounded-full whitespace-nowrap">
+                    Link
+                  </span>
+                </div>
+                <p className="text-zinc-700">{r.description}</p>
+                <p className="mt-4 text-sm text-zinc-600">Open resource →</p>
+              </a>
+            ))}
           </div>
         </div>
       </div>
