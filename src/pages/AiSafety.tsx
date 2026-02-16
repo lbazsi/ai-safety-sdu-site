@@ -177,24 +177,31 @@ export default function AiSafetyPage() {
           </p>
 
           <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {resources.map((r) => (
-              <a
-                key={r.url}
-                href={r.url}
-                target="_blank"
-                rel="noreferrer"
-                className="bg-white p-6 rounded-lg border border-zinc-200 hover:border-zinc-400 transition-colors block"
-              >
-                <div className="flex items-start justify-between gap-4 mb-3">
-                  <h3 className="text-lg font-semibold text-zinc-950 leading-snug">{r.title}</h3>
-                  <span className="text-xs font-semibold px-3 py-1 bg-zinc-950 text-stone-50 rounded-full whitespace-nowrap">
-                    Link
-                  </span>
-                </div>
-                <p className="text-zinc-700">{r.description}</p>
-                <p className="mt-4 text-sm text-zinc-600">Open resource →</p>
-              </a>
-            ))}
+            {resources.map((r, idx) => {
+              const isLast = idx === resources.length - 1;
+              const lastItemClasses = isLast
+                ? "sm:col-span-2 sm:justify-self-center sm:w-full sm:max-w-xl lg:col-span-1 lg:col-start-2 lg:justify-self-stretch lg:max-w-none"
+                : "";
+
+              return (
+                <a
+                  key={r.url}
+                  href={r.url}
+                  target="_blank"
+                  rel="noreferrer"
+                  className={`bg-white p-6 rounded-lg border border-zinc-200 hover:border-zinc-400 transition-colors block ${lastItemClasses}`}
+                >
+                  <div className="flex items-start justify-between gap-4 mb-3">
+                    <h3 className="text-lg font-semibold text-zinc-950 leading-snug">{r.title}</h3>
+                    <span className="text-xs font-semibold px-3 py-1 bg-zinc-950 text-stone-50 rounded-full whitespace-nowrap">
+                      Link
+                    </span>
+                  </div>
+                  <p className="text-zinc-700">{r.description}</p>
+                  <p className="mt-4 text-sm text-zinc-600">Open resource →</p>
+                </a>
+              );
+            })}
           </div>
         </div>
       </div>
