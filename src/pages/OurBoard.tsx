@@ -12,14 +12,14 @@ const boardMembers = [
     name: "Edna",
     imageSrc: "/edna.png",
     bio: "Hey there! My main focus is AI development and research, with a strong interest in building and understanding intelligent systems from the ground up. I am currently a software engineering student and have been diving deeper into AI for quite some time now - exploring everything from core concepts to hands-on projects. I serve as one of the founders and the Vice-President of this organization, where I am passionate about fostering a collaborative space for curious, driven students who want to push the boundaries of what is possible with AI. I am excited to share what I have learned, grow alongside you all and help guide motivated minds toward meaningful and innovative paths in this field. I look forward to seeing and connecting to you all <3",
-    email: "edna@example.com",
+    email: "ednaguerreiro14@gmail.com",
     whatsapp: "https://wa.me/351930612363",
   },
   {
     name: "Etele",
     imageSrc: "/etele.png",
-    bio: "Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
-    email: "etele@example.com",
+    bio: "I’m a student at SDU with a strong interest in robotics and the broader field of AI. I enjoy building and experimenting with robots and electronics, and I’m always curious about how theory can lead to real-world impact. Outside of my projects, I love exploring new tech ideas and learning about practical ways to make AI safer, as well as hiking in the mountains and practicing karate. I believe taking a leading role in this group will have an overall positive impact on the field of AI Safety and I wish to lead others towards its captivating and interesting field. I look forward to seeing the ambitious and eager students in our group!",
+    email: "kadar.kiss.etele@gmail.com",
     whatsapp: "https://wa.me/36205100407",
   },
 ] as const;
