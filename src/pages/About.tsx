@@ -165,8 +165,8 @@ export default function AboutPage() {
             {[
   { src: "/act1.jpeg", caption: "Our first AI Safety intro event" },
   { src: "/act2.jpg", caption: "EAGxAmsterdam conference" },
-  { src: "/act3.png", caption: "Sed do eiusmod tempor." },
-  { src: "/act4.png", caption: "Incididunt ut labore et." },
+  { src: "/act3.jpeg", caption: "Volunteering at EAG San Francisco" },
+  { src: "/act4.jpeg", caption: "Introductory event" },
   { src: "/act5.png", caption: "Dolore magna aliqua." },
   { src: "/act6.png", caption: "Ut enim ad minim veniam." },
   { src: "/act7.png", caption: "Duis aute irure dolor." },
